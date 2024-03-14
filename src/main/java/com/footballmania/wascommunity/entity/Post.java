@@ -33,7 +33,7 @@ public class Post {
     @Column(name="text", nullable = false)
     private String text;
 
-    @OneToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 

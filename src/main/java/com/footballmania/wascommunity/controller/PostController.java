@@ -14,8 +14,9 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5500"})
+
 @RestController
+@CrossOrigin(origins = {"http://footballmania.com", "https://footballmania.com"})
 @RequiredArgsConstructor
 @RequestMapping("/post")
 public class PostController {
